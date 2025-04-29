@@ -1,3 +1,6 @@
+//Matteo Podesta
+//Lab #6
+
 #include <iostream>
 #include <string>
 #include <ctime>
