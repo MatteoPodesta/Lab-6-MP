@@ -8,13 +8,13 @@
 #include <fstream>
 #include <sstream>
 using namespace std;
-//Global Variables-------------------------------------------------------------------
+
 int fractionCount = 0;
-//Function declerations--------------------------------------------------------------
+
 void printFractionCount() {
 	cout << "Current amount of fraction classes in memory is: " << fractionCount << endl;
 }
-//Class------------------------------------------------------------------------------
+
 class fraction {
 public:
 	fraction();
@@ -45,7 +45,7 @@ private:
 	int denominator = DEFAULT_DENOMINATOR;
 	int whole = DEFAULT_WHOLE;
 };
-//Enum-------------------------------------------------------------------------------
+
 enum {
 	DENOMINATOR_ZERO = 1,
 	NUMERATOR_ZERO,
@@ -53,7 +53,7 @@ enum {
 	TOO_BIG,
 	QUIT
 };
-//Main-------------------------------------------------------------------------------
+
 int main() {
 
 	int input = 0;
@@ -98,7 +98,7 @@ int main() {
 		}
 	}
 }
-//Class Constructor Defenintions-----------------------------------------------------
+
 fraction::fraction() {
 	fractionCount++;
 	setFraction(DEFAULT_NUMERATOR, DEFAULT_DENOMINATOR, whole);
@@ -126,7 +126,7 @@ fraction::fraction(fraction& fraction) {
 	fraction.denominator = denominator;
 	fraction.whole = whole;
 }
-//Class Function Defenintions--------------------------------------------------------
+
 string fraction::printFraction() {
 
 	ostringstream text;
