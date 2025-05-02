@@ -192,4 +192,3 @@ void fraction::setFraction(int NumeratorInput, int DenominatorInput) {
 void fraction::setFraction(int NumeratorInput) {
 	setFraction(NumeratorInput, denominator, whole);
 }
-//Function defenitions---------------------------------------------------------------
